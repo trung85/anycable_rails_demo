@@ -10,7 +10,7 @@ module ApplicationCable
 
     def connect
       cookies.each do |cookie|
-        puts cook
+        puts cookie
       end
       reject_unauthorized_connection unless logged_in?
 

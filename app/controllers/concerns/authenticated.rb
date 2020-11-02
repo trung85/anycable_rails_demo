@@ -46,7 +46,7 @@ module Authenticated
     session[:id] = user.id
     cookies[:uid] = {value: "#{user.name}/#{user.id}", domain: :all}
     cookies.each do |cookie|
-      puts cook
+      puts cookie
     end
   end
 end
