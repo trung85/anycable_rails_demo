@@ -9,6 +9,9 @@ module ApplicationCable
     identified_by :user
 
     def connect
+      cookies.each do |cookie|
+        puts cook
+      end
       reject_unauthorized_connection unless logged_in?
 
       self.user = current_user
