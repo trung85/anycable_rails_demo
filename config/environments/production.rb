@@ -7,7 +7,7 @@ Rails.application.configure do
   end
 
   # Configure session cookie to be stored for all subdomains
-  config.session_store :cookie_store, key: "_anycable_rails_demo_session", domain: "herokuapp.com", tld_length: 2
+  # config.session_store :cookie_store, key: "_anycable_rails_demo_session", domain: "herokuapp.com", tld_length: 2
 
   # Settings specified here will take precedence over those in config/application.rb.
 
