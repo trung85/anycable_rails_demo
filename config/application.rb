@@ -24,8 +24,5 @@ module AnycableRailsDemo
       g.test_framework nil
     end
 
-    config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: "_anycable_rails_demo_session", domain: :all, tld_length: 2, secure: true
-
   end
 end

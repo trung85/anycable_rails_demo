@@ -6,6 +6,9 @@ Rails.application.configure do
     config.action_cable.url = ActionCable.server.config.url = ENV.fetch("CABLE_URL") if AnyCable::Rails.enabled?
   end
 
+  # Configure session cookie to be stored for all subdomains
+  config.session_store :cookie_store, key: "_anycable_rails_demo_session", domain: :all, tld_length: 2, secure: true, expire_after: 14.days
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
