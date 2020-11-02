@@ -7,7 +7,7 @@ Rails.application.configure do
   end
 
   # Configure session cookie to be stored for all subdomains
-  config.session_store :cookie_store, key: "great_session", domain: %w(.herokuapp.com), tld_length: 2, secure: true, expire_after: 14.days
+  config.session_store :cookie_store, key: "great_session", domain: %w(.herokuapp.com), tld_length: 2, secure: true, expire_after: 14.days, http_only: false
 
   # Settings specified here will take precedence over those in config/application.rb.
 
