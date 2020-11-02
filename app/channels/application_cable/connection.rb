@@ -4,7 +4,7 @@ module ApplicationCable
   class Connection < ActionCable::Connection::Base
     include Authenticated
 
-    # delegate :session, to: :request
+    delegate :session, to: :request
 
     identified_by :user
 
