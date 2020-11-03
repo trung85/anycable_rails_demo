@@ -54,13 +54,13 @@ services:
     <<: *backend
     command: bundle exec rails server -b 0.0.0.0
     ports:
-      - '3000:3000'
+      - '3001:3000'
 
   # Separate definition for system tests to add Chrome as a dependency
   rspec_system:
     <<: *backend
     ports:
-      - '3000:3000'
+      - '3001:3000'
       - '50051'
     environment:
       <<: *backend_environment
